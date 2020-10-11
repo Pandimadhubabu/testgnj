@@ -4,9 +4,7 @@ import fetch from 'node-fetch';
 import FadeIn from 'react-fade-in';
 import { useSpring } from 'react-spring';
 import InfiniteScroll from 'react-infinite-scroll-component';
-
 import TitleBar from '../components/TitleBar';
-import Spacing from '../components/Spacing';
 import NewsHeader from '../components/NewsHeader';
 import NewsWrapper from '../components/NewsWrapper';
 import News from '../components/News';
@@ -44,13 +42,7 @@ export default () => {
     <Styles>
       <FadeIn>
         <TitleBar />
-        <Spacing height='1.2rem' />
-        <div className='statistics'>
-          <FadeIn>
-            
-          </FadeIn>
-        </div>
-        <Spacing />
+        
         <div>
           <NewsHeader
             onClick={() => {
@@ -80,7 +72,6 @@ export default () => {
                 </News>
               ))}
             </InfiniteScroll>
-            <Spacing height='0.8rem' />
           </NewsWrapper>
         </div>
       </FadeIn>
