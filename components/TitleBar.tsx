@@ -7,7 +7,7 @@ export default () => {
       <h1 className='main'>COVID-19</h1>
       <p className='description'>
         A simple web app which shows live news about COVID-19.
-        Created with <Emoji symbol='❤️' label='heart' /> by{' '}
+        Created with <Emoji symbol='❤️' label='heart' />
         
         </span>
       </p>
