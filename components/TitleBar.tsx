@@ -4,15 +4,11 @@ import Emoji from 'a11y-react-emoji';
 export default () => {
   return (
     <Styles>
-      <h1 className='main'>CoronaStats</h1>
+      <h1 className='main'>COVID-19</h1>
       <p className='description'>
-        A simple web app which shows live statistics and news about COVID-19.
+        A simple web app which shows live news about COVID-19.
         Created with <Emoji symbol='❤️' label='heart' /> by{' '}
-        <span
-          onClick={() => window.open('https://twitter.com/raphtlw')}
-          className='raphtlw'
-        >
-          raphtlw
+        
         </span>
       </p>
     </Styles>
