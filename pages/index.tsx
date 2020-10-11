@@ -74,9 +74,8 @@ export default () => {
               {news.map((item, index) => (
                 <News
                   key={index}
-                  source=<img https://www.google.com/s2/favicons?domain={item.source} />
                   onClick={() => window.open(item.link)}
-                >
+                > source= <img https://www.google.com/s2/favicons?domain={item.source} />
                   {item.title}
                 </News>
               ))}
