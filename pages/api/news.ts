@@ -17,7 +17,7 @@ export default async (req, res) => {
 
   const news: any[] = totalNews.map((item) => {
     return {
-      source: 'Google News',
+      source: item.link,
       title: item.title,
       link: item.link,
     };
