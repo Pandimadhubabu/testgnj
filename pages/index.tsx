@@ -44,7 +44,6 @@ export default () => {
 
   useEffect(() => {
     fetchNews();
-    return () => clearInterval(interval);
   }, []);
 
   const [, setY] = useSpring(() => ({ y: 0 }));
