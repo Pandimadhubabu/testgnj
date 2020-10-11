@@ -13,24 +13,16 @@ import News from '../components/News';
 
 export default () => {
   const [stats, setStats] = useState({
-    cases: 'loading...',
-    deaths: 'loading...',
-    recovered: 'loading...',
+    
     active: {
-      total: 'loading...',
-      mild: 'loading...',
-      serious: 'loading...',
+      
     },
     closed: {
-      total: 'loading...',
-      recovered: 'loading...',
-      deaths: 'loading...',
+      
     },
   });
   const [news, setNews] = useState([]);
-  const [detailsShown1, setDetailsShown1] = useState(false);
-  const [detailsShown2, setDetailsShown2] = useState(false);
-  const [tapMe, setTapMe] = useState(true);
+  
 
 
   const fetchNews = () => {
