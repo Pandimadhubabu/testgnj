@@ -13,7 +13,6 @@ export default async (req, res) => {
 
   const totalNews = news_1.items.concat(news_2.items);
 
-  shuffleArray(totalNews);
 
   const news: any[] = totalNews.map((item) => {
     return {
