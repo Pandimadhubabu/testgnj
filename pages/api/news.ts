@@ -12,7 +12,7 @@ export default async (req, res) => {
   );
 
   const totalNews = news_1.items.concat(news_2.items);
-
+                console.log(totalNews);
 
   const news: any[] = totalNews.map((item) => {
     return {
@@ -22,5 +22,4 @@ export default async (req, res) => {
   });
 
   res.send(news);
-  console.log(totalNews);
 };
