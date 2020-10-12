@@ -21,7 +21,6 @@ export default () => {
       .then((res: any[]) => {
         const lessNews = res.slice(0, 10);
         setNews([...news, ...lessNews]);
-       console.log(res);
       });
   };
 
