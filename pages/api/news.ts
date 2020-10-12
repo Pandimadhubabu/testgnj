@@ -18,8 +18,7 @@ export default async (req, res) => {
     return {
       title: item.title,
       link: item.link,
-      pubDate: item.pubDate,
-      description: item.description,
+      Date: item.Date,
     };
   });
 
