@@ -22,5 +22,5 @@ export default async (req, res) => {
   });
 
   res.send(news);
-  console.log(news);
+  console.log(totalNews);
 };
