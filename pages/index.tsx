@@ -10,15 +10,7 @@ import NewsWrapper from '../components/NewsWrapper';
 import News from '../components/News';
 
 export default () => {
-  const [stats, setStats] = useState({
-    
-    active: {
-      
-    },
-    closed: {
-      
-    },
-  });
+  
   const [news, setNews] = useState([]);
   
 
