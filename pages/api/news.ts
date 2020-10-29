@@ -19,6 +19,7 @@ export default async (req, res) => {
       title: item.title,
       link: item.link,
       Date: item.Date,
+      url: item.link,
     };
   });
 
