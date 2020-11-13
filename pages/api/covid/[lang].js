@@ -4,7 +4,7 @@ export default async (request, response) => {
   const { lang } = request.query
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    'corona virus','${lang}'
+    'corona virus','te'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
