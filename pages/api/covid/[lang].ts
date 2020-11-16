@@ -1,9 +1,10 @@
 import googleNewsAPI from 'google-news-json';
 
-export default async (req, res) => {
+export default async (request, response) => {
+  const { lang } = request.query
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    'corona virus','en-IN'
+    'corona virus','${lang}'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
@@ -12,16 +13,15 @@ export default async (req, res) => {
   );
 
   const totalNews = news_1.items.concat(news_2.items);
-                
+ 
 
-  const news: any[] = totalNews.map((item) => {
+  const covid: any[] = totalNews.map((item) => {
     return {
       title: item.title,
-      link: item.link,
       Date: item.Date,
       url: item.link,
     };
   });
 
-  res.send(news);
+  res.send(covid);
 };
