@@ -1,10 +1,10 @@
 import googleNewsAPI from 'google-news-json';
 
-export default async (request, response) => {
-  const { lang } = request.query
+export default async (req, res) => {
+  const { lang } = req.query
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    'corona virus','{lang}'
+    'corona virus','${lang}'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
