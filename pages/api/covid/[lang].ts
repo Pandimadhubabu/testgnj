@@ -9,7 +9,7 @@ export default async (req, res) => {
 
   const news_2: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    'pandemic','en-IN'
+    'pandemic','{lang}'
   );
 
   const totalNews = news_1.items.concat(news_2.items);
