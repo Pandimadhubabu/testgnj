@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 export default async (req, res) => {
   const router = useRouter();
-  const { lang } = router.query
+  const { lang } = router.query;
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
     '{lang}','te'
