@@ -1,17 +1,17 @@
 import googleNewsAPI from 'google-news-json';
 import { useRouter } from 'next/router';
 
-export default async () => {
+export default async (req, res) => {
   const router = useRouter();
   const { lang } = router.query;
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    '{lang}','te'
+    '{lang}','en-in'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    '{lang}','te'
+    '{lang}','en-in'
   );
 
   const totalNews = news_1.items.concat(news_2.items);
@@ -25,5 +25,5 @@ export default async () => {
     };
   });
 
-  (covid);
+  res.send(covid);
 };
