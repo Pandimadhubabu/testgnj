@@ -1,6 +1,9 @@
 import googleNewsAPI from 'google-news-json';
+import { useRouter } from 'next/router';
 
 export default async (req, res) => {
+  const router = useRouter();
+   console.log(router.query);
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
     'corona virus','en-IN'
