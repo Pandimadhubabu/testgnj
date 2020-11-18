@@ -13,7 +13,7 @@ export default async (req, res) => {
     'pandemic','en-IN'
   );
   const router = useRouter();
-  console.log(router.query);
+  
   const totalNews = news_1.items.concat(news_2.items);
                 
 
