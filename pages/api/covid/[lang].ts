@@ -1,7 +1,7 @@
 import googleNewsAPI from 'google-news-json';
 import { useRouter } from 'next/router';
 
-export default async (req, res, query) => {
+export default async (req, res) => {
   const router = useRouter();
   const { lang } = router.query;
   const news_1: any = await googleNewsAPI.getNews(
