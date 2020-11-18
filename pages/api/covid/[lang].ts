@@ -12,7 +12,7 @@ export default async (req, res) => {
     googleNewsAPI.SEARCH,
     'pandemic','en-IN'
   );
-  const router = useRouter();
+  
   
   const totalNews = news_1.items.concat(news_2.items);
                 
