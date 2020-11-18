@@ -6,14 +6,14 @@ export default async (req, res, query) => {
   const { lang } = router.query;
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    '${lang}','en-IN'
+    'corona virus','en-IN'
     
     //'corona virus','en-IN'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    '${lang}','en-US'
+    'corona virus','en-US'
   );
 
   const totalNews = news_1.items.concat(news_2.items);
