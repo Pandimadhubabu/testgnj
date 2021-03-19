@@ -1,16 +1,16 @@
 import googleNewsAPI from 'google-news-json';
-import {useRouter} from 'next/router';
 
 export default async (request, res) => {
+  const { theme } = req.query
   
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    'corona virus','en-IN'
+    '+theme.toUpperCase()+','en-IN'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    'pandemic','en-IN'
+    '+theme.toUpperCase()+','en-IN'
   );
   
   
