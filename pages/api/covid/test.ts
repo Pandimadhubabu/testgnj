@@ -1,7 +1,7 @@
 import googleNewsAPI from 'google-news-json';
 
 export default async (request, res) => {
-  const {theme} = request.query.theme
+  const {test} = request.query.test
   
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
@@ -22,7 +22,7 @@ export default async (request, res) => {
       title: item.title,
       link: item.link,
       Date: item.Date,
-      url: item.link,
+      
     };
   });
 
