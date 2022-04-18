@@ -5,7 +5,7 @@ export default async (request, res) => {
   
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
-    { madhu },'en-IN'
+    '${madhu}','en-IN'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
