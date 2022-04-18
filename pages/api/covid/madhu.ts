@@ -19,7 +19,7 @@ export default async (request, res) => {
 
   const covid: any[] = totalNews.map((item) => {
     return {
-      title: item.title
+      title: item.title,
       
       
     };
