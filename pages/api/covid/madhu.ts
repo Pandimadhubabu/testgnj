@@ -1,7 +1,7 @@
 import googleNewsAPI from 'google-news-json';
 
 export default async (request, res) => {
-  const {test} = request.query.test
+  const {madhu} = request.query.madhu
   
   const news_1: any = await googleNewsAPI.getNews(
     googleNewsAPI.SEARCH,
@@ -19,9 +19,8 @@ export default async (request, res) => {
 
   const covid: any[] = totalNews.map((item) => {
     return {
-      title: item.title,
-      link: item.link,
-      Date: item.Date,
+      title: item.title
+      
       
     };
   });
