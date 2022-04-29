@@ -18,8 +18,8 @@ export default async (req, res) => {
     return {
       title: item.title,
       link: item.link,
-      Date: item.Date,
-      url: item.link,
+      pubDate: item.Date,
+   
     };
   });
 
