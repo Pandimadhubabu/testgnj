@@ -20,6 +20,8 @@ export default async (request, res) => {
   const covid: any[] = totalNews.map((item) => {
     return {
       title: item.title,
+      link: item.link,
+      date:item.pubDate,
       
       
     };
