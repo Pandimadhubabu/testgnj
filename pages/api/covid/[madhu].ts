@@ -4,13 +4,13 @@ export default async (request, res) => {
   const {madhu} = request.query.madhu
   
   const news_1: any = await googleNewsAPI.getNews(
-    googleNewsAPI.SEARCH,
-    '${madhu}','en-IN'
+    googleNewsAPI.NATION,
+    'en-IN'
   );
 
   const news_2: any = await googleNewsAPI.getNews(
-    googleNewsAPI.SEARCH,
-    'hindi','en-IN'
+    googleNewsAPI.BUSINESS,
+    'en-IN'
   );
   
   
